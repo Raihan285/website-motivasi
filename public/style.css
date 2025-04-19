@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Global */
+body {
+  font-family: "Roboto Flex", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background-image: url("image/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Container utama */
+.container {
+  width: auto;
+  max-width: 750px;
+  background-color: #23252ed0;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 80px auto 40px auto;
+  min-height: 100px;
+  height: auto;
+}
+
+/* Wrapper kutipan */
+#quote-wrapper {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #101630;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10px) translateX(-10px);
+  margin-bottom: 20px;
+  height: auto;
+}
+
+/* Isi kutipan */
+#quote {
+  font-size: 24pt;
+  width: 100%;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Tombol */
+button {
+  padding: 12px 24px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+  width: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  z-index: -1;
+}
+
+/* Efek hover tombol */
+button:hover {
+  scale: 1.05;
+  color: #000;
+}
+
+/* Efek animasi tombol */
+button::after {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -120px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+button:hover::after {
+  translate: 0 -30px;
+  scale: 3;
+}
+
+/* Tombol motivasi */
+.button-motivasi {
+  background-color: #000000;
+  border: 1px solid #000000;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+  text-align: center;
+}
+
+.button-motivasi:hover {
+  color: #000000;
+}
+
+/* Judul */
+#title {
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  background-color: #101630;
+  font-weight: bold;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Simbol kutipan */
+#quote-symbol {
+  width: 40px;
+  font-weight: bold;
+  margin: 20px 0 5px 20px;
+}
+
+#quote::after {
+  content: '"';
+}
+
+/* Gambar penulis kutipan */
+#author-photo-border {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 3px solid #101630;
+  border-radius: 10px;
+}
+
+.author-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Penulis kutipan */
+#author {
+  font-size: 16pt;
+  margin: 0 20px 20px 20px;
+  font-family: "Roboto Flex", sans-serif;
+  align-self: flex-end;
+}
+
+#author > #author-name::before {
+  content: '-';
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* Footer */
+#bottom {
+  background-color: #101630;
+  color: #fff;
+  padding: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 0 3px 3px;
+  margin-top: 20px;
+  text-align: center;
+}
