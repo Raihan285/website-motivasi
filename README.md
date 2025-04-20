@@ -1,8 +1,6 @@
 # Motivasi
 ## Deskripsi
-Motivasi dari tokoh terkenal
-## Screenshot
-![Screenshot aplikasi](/public/screenshot.png)
+Kata-kata motivasi dari tokoh-tokoh terkenal dunia
 
 ## Cara Instalasi
 ```bash
