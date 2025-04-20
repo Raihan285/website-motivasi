@@ -1,8 +1,6 @@
-# Quote node.js
-
+# Motivasi
 ## Deskripsi
-Quote node.js adalah aplikasi berbasis web yang akan menampilkan quote dari beberapa tokoh terkenal.
-
+Motivasi dari tokoh terkenal
 ## Screenshot
 ![Screenshot aplikasi](screenshot/screenshot.png)
 
