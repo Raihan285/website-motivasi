@@ -2,7 +2,7 @@
 ## Deskripsi
 Motivasi dari tokoh terkenal
 ## Screenshot
-![Screenshot aplikasi](screenshot/screenshot.png)
+![Screenshot aplikasi](/public/screenshot.png)
 
 ## Cara Instalasi
 ```bash
